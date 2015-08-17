@@ -12,7 +12,8 @@ RUN apt-get dist-upgrade -y
 
 RUN apt-get install -y \
 	curl \
-	git
+	git \
+	software-properties-common
 
 ADD /scripts/rvm.sh /scripts/rvm.sh
 RUN /scripts/rvm.sh
